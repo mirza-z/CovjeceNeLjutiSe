@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#mainMenu{
+    width: inherit;
+    height: inherit;
+    background-image: url("./mainMenuBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainMenu button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100px;
+    height: 40px;
+    margin-left: 60px;
+    margin-right: 30px;
+    border: 2px solid red;
+    border-radius: 15px;
+    background-color: red;
+    color: aqua;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#passAndPlay{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#passAndPlay button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100px;
+    height: 40px;
+    margin-left: 60px;
+    margin-right: 30px;
+    border: 2px solid red;
+    border-radius: 15px;
+    background-color: red;
+    color: aqua;
+    font-size: 16px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 10px;
+}
+
+#naslov{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top:25px;
+    color: wheat;
+    text-align: center;
+    font-size: 44px;
+}
+
+#kontrolnaTabla{
+    width: 90vw;
+    height: 150px;
+    border: 3px solid wheat;
+    position: absolute;
+    top: 550px;
+}
+
+#ploca{
+    width: 375px;
+    height: 375px;
+    background-color: wheat;
+    border-radius: 20px;
+    position: absolute;
+    top: 150px;
+    overflow: hidden;
+    transform: rotate(0deg);
+}
+
+.baza{
+    width: 150px;
+    height: 150px;
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gore-lijevo{
+    position: absolute;
+}
+
+.gore-desno{
+    position: absolute;
+    right: 0px;
+}
+
+.dole-lijevo{
+    position: absolute;
+    bottom: 0px;
+}
+
+.dole-desno{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.crvena{
+    background-color: red;
+}
+
+.zelena{
+    background-color: green;
+}
+
+.plava{
+    background-color: blue;
+}
+
+.zuta{
+    background-color: yellow;
+}
+
+.horizontalna{
+    background-color: white;
+    width: 150px;
+    height: 75px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.hLijevo{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+}
+
+.hDesno{
+    position: absolute;
+    top: 150px;
+    right: 0px;
+}
+
+.vertikalna{
+    background-color: white;
+    width: 75px;
+    height: 150px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.vGore{
+    position: absolute;
+    left: 150px;
+    top: 0px;
+}
+
+.vDole{
+    position: absolute;
+    left: 150px;
+    bottom: 0px;
+}
+
+.sredina{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    overflow: hidden;
+}
+
+.sZelena{
+    background-color: green;
+    position: absolute;
+    left:-54px;
+    transform: rotate(45deg);
+    width: 75px;
+    height: 75px;
+}
+
+.sZuta{
+    background-color: yellow;
+    position: absolute;
+    right: -54px;
+    transform: rotate(45deg);
+    width: 75px;
+    height: 75px;
+}
+
+.sCrvena{
+    background-color: red;
+    position: absolute;
+    top:-54px;
+    transform: rotate(45deg);
+    width: 75px;
+    height: 75px;
+}
+
+.sPlava{
+    background-color: blue;
+    position: absolute;
+    bottom: -54px;
+    transform: rotate(45deg);
+    width: 75px;
+    height: 75px;
+}
+
+.dijagonala1{
+    background-color: black;    
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    top: 50px;
+    left: -24px;
+    transform: rotate(45deg);
+    z-index: 5;
+}
+
+.dijagonala2{
+    background-color: black;    
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    top: 50px;
+    right: -24px;
+    transform: rotate(-45deg);
+    z-index: 5;
+}
+
+.red1{
+    width: 150px;
+    height: 25px;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.red2{
+    width: 150px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.red3{
+    width: 150px;
+    height: 25px;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.kutijaH{
+    width: 24.7px;
+    height: 25px;
+    border-right: 2px solid black;
+}
+
+.kolona1{
+    height: 150px;
+    width: 25px;
+    display: flex;
+    border-right: 2px solid black;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.kolona2{
+    height: 150px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.kolona3{
+    height: 150px;
+    width: 25px;
+    border-left: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.kutijaK{
+    width: 25px;
+    height: 24.7px;
+    border-bottom: 2px solid black;
+}
+
+.baza div{
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.pijun{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px black solid;
+    z-index: 5;
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    text-align: center;
+    font-weight: bolder;
+}

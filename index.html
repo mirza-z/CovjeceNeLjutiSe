@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="mainMenu">
+        <button>Join Lobby</button>
+        <button onclick="sceneOne()">Pass To Play</button>
+    </section>
+
+    <section id="passAndPlay">
+        <div id="naslov">Covjece Ne Ljuti Se</div>
+
+        <div id="ploca">
+            <div class="baza zelena gore-lijevo"> <div></div></div>
+            <div class="baza crvena gore-desno"><div></div></div>
+            <div class="baza plava dole-lijevo"><div></div></div>
+            <div class="baza zuta dole-desno"><div></div></div>
+
+            <div class="pijun zelena" id="Z1">1</div>
+            <div class="pijun zelena" id="Z2">2</div>
+            <div class="pijun zelena" id="Z3">3</div>
+            <div class="pijun zelena" id="Z4">4</div>
+
+            <div class="pijun crvena" id="C1">1</div>
+            <div class="pijun crvena" id="C2">2</div>
+            <div class="pijun crvena" id="C3">3</div>
+            <div class="pijun crvena" id="C4">4</div>
+
+            <div class="pijun zuta" id="Y1">1</div>
+            <div class="pijun zuta" id="Y2">2</div>
+            <div class="pijun zuta" id="Y3">3</div>
+            <div class="pijun zuta" id="Y4">4</div>
+
+            <div class="pijun plava" id="P1">1</div>
+            <div class="pijun plava" id="P2">2</div>
+            <div class="pijun plava" id="P3">3</div>
+            <div class="pijun plava" id="P4">4</div>
+            
+            <div class="horizontalna hLijevo">
+                <div class="red1">
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH zelena"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                </div>
+                <div class="red2">
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH zelena"></div>
+                    <div class="kutijaH zelena"></div>
+                    <div class="kutijaH zelena"></div>
+                    <div class="kutijaH zelena"></div>
+                    <div class="kutijaH zelena"></div>
+                </div>
+                <div class="red3">
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                </div>
+            </div>
+            <div class="horizontalna hDesno">
+                <div class="red1">
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                </div>
+                <div class="red2">
+                    <div class="kutijaH zuta"></div>
+                    <div class="kutijaH zuta"></div>
+                    <div class="kutijaH zuta"></div>
+                    <div class="kutijaH zuta"></div>
+                    <div class="kutijaH zuta"></div>
+                    <div class="kutijaH"></div>
+                </div>
+                <div class="red3">
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH"></div>
+                    <div class="kutijaH zuta"></div>
+                    <div class="kutijaH"></div>
+                </div>
+            </div>
+            <div class="vertikalna vGore">
+                <div class="kolona1">
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                </div>
+                <div class="kolona2">
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK crvena"></div>
+                    <div class="kutijaK crvena"></div>
+                    <div class="kutijaK crvena"></div>
+                    <div class="kutijaK crvena"></div>
+                    <div class="kutijaK crvena"></div>
+                </div>
+                <div class="kolona3">
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK crvena"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                </div>
+            </div>
+            <div class="vertikalna vDole">
+                <div class="kolona1">
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK plava"></div>
+                    <div class="kutijaK"></div>
+                </div>
+                <div class="kolona2">
+                    <div class="kutijaK plava"></div>
+                    <div class="kutijaK plava"></div>
+                    <div class="kutijaK plava"></div>
+                    <div class="kutijaK plava"></div>
+                    <div class="kutijaK plava"></div>
+                    <div class="kutijaK"></div>
+                </div>
+                <div class="kolona3">
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                    <div class="kutijaK"></div>
+                </div>
+            </div>
+            <div class="sredina">
+                <div class="sZelena"></div>
+                <div class="sZuta"></div>
+                <div class="sCrvena"></div>
+                <div class="sPlava"></div>
+                <div class="dijagonala1"></div>
+                <div class="dijagonala2"></div>
+            </div>
+        </div>
+
+        <div id="kontrolnaTabla">
+            
+        </div>
+        <button onclick="sceneZero()">Nazad na Menu</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
